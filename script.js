@@ -7,7 +7,7 @@ function makepostRequest() {
         .then(data => {
             // Copy and edit the data
             const newToDo = {
-                userId:1,
+                userId: 1,
                 title: 'finsih the exercise',
                 completed: true
             };
@@ -20,12 +20,12 @@ function makepostRequest() {
                 },
                 body: JSON.stringify(newToDo)
             })
-            .then(response => response.json())
-            .then(postResponse => {
-                // Display the response
-                document.getElementById('response').textContent = JSON.stringify(postResponse, null, 2);
-            })
-            .catch(error => console.error('Error:', error));
+                .then(response => response.json())
+                .then(postResponse => {
+                    // Display the response
+                    document.getElementById('response').textContent = JSON.stringify(postResponse, null, 2);
+                })
+                .catch(error => console.error('Error:', error));
         })
         .catch(error => console.error('Error:', error));
 }
