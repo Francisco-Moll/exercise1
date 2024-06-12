@@ -8,7 +8,7 @@ function makepostRequest() {
             // Copy and edit the data
             const newToDo = {
                 userId: 1,
-                title: 'finsih the exercise',
+                title: 'finish the exercise',
                 completed: true
             };
 
